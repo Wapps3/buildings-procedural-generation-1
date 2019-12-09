@@ -16,7 +16,7 @@ public class SquareBuilding : MonoBehaviour
     {
         for (int i = 0; i < numberSquare; i++)
         {
-            float sizeActual = sizeMax - (i * Random.Range(0.0f, 0.2f) * sizeMax);
+            float sizeActual = sizeMax - (i * Random.Range(0.0f, 1/numberSquare ) * sizeMax);
 
             float widthActual;
             if(Random.Range(0,1) == 0)
@@ -24,7 +24,7 @@ public class SquareBuilding : MonoBehaviour
             else
                 widthActual = widthMax * Random.Range(.2f, .8f);
 
-            float heighActual;
+            float heighActual;  
             if (Random.Range(0, 1) == 0)
                 heighActual = widthMax * Random.Range(-.8f, -.2f);
             else
